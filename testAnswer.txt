@@ -1,14 +1,15 @@
 1.1. A class is a type of blueprint which can be used (inherited) to create/instantiate unique objects that follow the same blueprint. I.e. that makes use of the attributes and methods set in the class.
+
 An interface is also a type of contract of attributes and methods. It sets requirements for the usage of this interface, but does not include code for instantiation (i.e. constructors).
 
-1.2. Getters and setters are used to access values set inside a class.
+1.2. Getters and setters are used to access values set inside a class. Getter are used to retrieve and setters are used to update values.
 
 2.3. It is a form of testing where one does not know the implementation/code of a piece of code or functionality. One only cares about the input used and the resulting output.
 
-2.4. They help you think about your code before you write it (i.e. make sure that you work towards the goal that you set in the test case (TDD)). They help as a safety net for deployment/build processes.
+2.4. Tests help you think about your code before you write it (i.e. make sure that you work towards the goal that you set in the test case (TDD)). They help as a safety net for deployment/build processes.
 
-3.5. The first argument in NodeJS callbacks an error object. I assume the reason is to return an error before any unnecessary code is executed?
+3.5. The first argument in NodeJS callbacks is an error object. I assume the reason is to return an error before any unnecessary code is executed?
 
-3.6. fsreadSync is blocking (i.e. it runs synchronously and has to finish before any code is called). fs.read is an async call that does not block any of the following code.
+3.6. fsreadSync is blocking (i.e. it runs synchronously and has to finish before any other code is exeuted). fs.read is an async call that does not block any of the following code.
 
 3.7. And code that you don’t want to block any other code from being executed. I.e. code that does not return values that are required for the following code to be run successfully and return accurate results. Also code that takes a while to return results (i.e. API calls).
