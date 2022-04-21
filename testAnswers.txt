@@ -17,5 +17,5 @@ a safety net for deployment/build processes.
 3.6. fsreadSync is blocking (i.e. it runs synchronously and has to finish before any other code is exeuted). fs.read is an async call that does not block
 any of the following code.
 
-3.7. And code that you don’t want to block any other code from being executed. I.e. code that does not return values that are required for the following code
+3.7. Any code that you don’t want to block any other code from being executed. I.e. code that does not return values that are required for the following code
 to be run successfully and return accurate results. Also code that takes a while to return results (i.e. API calls).
